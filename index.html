@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook - login in or Sign Up</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        background: rgb(242, 250, 252);
+      }
+
+      .container {
+        background: white;
+        width: 432px;
+        box-shadow: 5px 5px 50px lightgray;
+        margin: 200px auto;
+        border-radius: 10px;
+      }
+
+      .sign-title {
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .sign-title h1 {
+        color: #1c1e21;
+        font-size: 32px;
+        margin-bottom: 6px;
+      }
+
+      .sign-title p {
+        color: #606770;
+        font-size: 15px;
+      }
+
+      .symbol {
+        font-size: 25px;
+        color: gray;
+        cursor: pointer;
+      }
+
+      form {
+        padding: 16px;
+      }
+
+      .first-name {
+        width: 49%;
+        float: left;
+        margin-right: 8px !important;
+      }
+
+      .last-name {
+        width: 49%;
+      }
+
+      .email,
+      .password {
+        width: 100%;
+      }
+
+      .first-name,
+      .last-name,
+      .email,
+      .password {
+        margin: 0 0 8px 0;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+      }
+
+      .first-name,
+      .last-name,
+      .email,
+      .password,
+      ::placeholder {
+        background: rgb(238, 238, 238);
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      .first-name,
+      .last-name,
+      .email,
+      .password,
+      :focus {
+        outline: none;
+      }
+
+      .selector {
+        margin: 0 0 8px;
+      }
+
+      .gender-area {
+        margin: 0 0 12px;
+      }
+
+      select {
+        width: 32%;
+        padding: 10px;
+        border: 1px solid lightgray !important;
+        border-radius: 5px !important;
+        cursor: pointer;
+      }
+
+      .gender {
+        width: 32.5% !important;
+        padding: 10px;
+        margin: 0 6px 0 0;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+      }
+
+      .gender-male label {
+        margin: 0 20px 0 0;
+      }
+      .selector label {
+        padding: 0 30px 0 0;
+        cursor: pointer;
+      }
+
+      .description {
+        color: #777;
+        font-size: 12px;
+        margin: 20px 0 20px 0;
+      }
+
+      p span {
+        color: blue;
+        cursor: pointer;
+      }
+
+      .submit {
+        background-color: #00a400;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        height: 36px;
+        padding: 0 42px;
+        margin: 0 0 0 140px !important;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <article class="container">
+        <section class="sign-title">
+          <article class="">
+            <h1>Sign Up</h1>
+            <p>It's quite and easy.</p>
+          </article>
+          <span class="symbol">&#10006;</span>
+        </section>
+        <hr />
+        <form action="#">
+          <input
+            class="first-name"
+            type="text"
+            placeholder="First Name"
+            required
+          />
+          <input class="last-name" type="text" placeholder="Surname" required />
+          <input
+            class="email"
+            type="email"
+            placeholder="Mobile number or email address"
+            required
+          />
+          <input
+            class="password"
+            type="password"
+            placeholder="New password"
+            required
+          />
+          <article class="selector">
+            <p class="date"><small>Date of birth ?</small></p>
+            <select name="" id="">
+              <option value="volvo">14</option>
+              <option value="saab">15</option>
+              <option value="opel">16</option>
+              <option value="audi">17</option>
+              <option value="mercedez">18</option>
+              <option value="ford">19</option>
+              <option value="mustang">20</option>
+            </select>
+            <select name="" id="">
+              <option value="volvo">Feb</option>
+              <option value="saab">Mar</option>
+              <option value="opel">Apr</option>
+              <option value="audi">May</option>
+              <option value="crown">Jun</option>
+              <option value="premio">Jul</option>
+              <option value="mustang">Aug</option>
+              <option value="american muscle">Sep</option>
+              <option value="gt">Oct</option>
+              <option value="alien">Nov</option>
+              <option value="bentaley">Dec</option>
+            </select>
+            <select name="" id="">
+              <option value="volvo">2021</option>
+              <option value="saab">2022</option>
+              <option value="opel">2023</option>
+              <option value="audi">2024</option>
+              <option value="greenline">2025</option>
+              <option value="starline">2026</option>
+              <option value="rollsroyace">2027</option>
+              <option value="audir8">2028</option>
+            </select>
+          </article>
+          <article class="selector">
+            <p class="gender-area"><small>Gender ?</small></p>
+            <span class="gender">
+              <label for="female">Female</label>
+              <input id="female" type="radio" name="gender" id="" />
+            </span>
+            <span class="gender gender-male">
+              <label for="male">Male</label>
+              <input id="male" type="radio" name="gender" id="" />
+            </span>
+            <span class="gender">
+              <label for="custom">Custom</label>
+              <input id="custom" type="radio" name="gender" id="" />
+            </span>
+          </article>
+          <p class="description">
+            By clicking Sign Up, you agree to our
+            <span>Terms, Data Policy</span> and
+            <span>Cookie Policy.</span>
+            You may receive SMS notifications from us and can opt out at any
+            time.
+          </p>
+          <input class="submit" type="submit" value="Submit" />
+        </form>
+      </article>
+    </main>
+  </body>
+</html>
